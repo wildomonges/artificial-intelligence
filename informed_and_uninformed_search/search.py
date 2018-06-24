@@ -26,6 +26,7 @@ import math
 import numpy as np
 import time
 
+
 class State:
     """
     This class represent a state of the board configuration
