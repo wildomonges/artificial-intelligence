@@ -3,7 +3,7 @@
 This project is to apply the knowledge learned in the course "Artificial Intelligence" in edx.org
 I've implemented uninformed search BFS, DFS and informed search A* and IDA
 Note:
-    The problem is called n-puzzle. You have a input state and using a search algorithm, the program
+    The problem is called n-puzzle. You have an input state and using a search algorithm, the program
     should find the movements that needs to be done to have the goal state
     Python 3.5
     How?
@@ -29,7 +29,7 @@ import time
 
 class State:
     """
-    This class represent a state of the board configuration
+    This class represents a state of the board configuration
     """
     def __init__(self, values):
         self.inherit_from_state = None
@@ -42,7 +42,7 @@ class State:
         self.use_heuristic = False
 
     def __eq__(self, other_state):
-        """ Allow to compare if two numpy array has the same elements"""
+        """ Allow to compare if two numpy arrays have the same elements"""
         if (self.values == other_state.values).all():
             return True
         return False
