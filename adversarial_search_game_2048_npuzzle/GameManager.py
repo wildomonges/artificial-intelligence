@@ -55,6 +55,7 @@ class GameManager:
             self.over = True
         else:
             while time.clock() - self.prev_time < time_limit + allowance:
+                # pass
                 pass
 
             self.prev_time = time.clock()
